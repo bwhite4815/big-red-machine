@@ -1,0 +1,44 @@
+h1.logo a { color: #fff; font-size: 20px; padding-left: 10px; font-family: 'Crete Round'; }
+h1.logo a:hover { 
+	background: transparent; 
+	color: #f1c40f;
+	@include transition(color ease-in .2s);
+}
+.toggle:hover i {
+	color: #f1c40f;
+	@include transition(color ease-in .2s);
+}
+.navbar { margin-bottom: 0; }
+.navbar ul li:hover > a { 
+	background: transparent!important; 
+	color: #f1c40f;
+	@include transition(color ease-in .2s);
+}
+.navbar ul li > a { font-family: 'Crete Round'; text-shadow: none; }
+.banner-section { background-color: #3498db; border-top: 5px solid #f9fafa; padding: 15px 0; }
+#feature-a { background-color: #e74d3d; }
+#feature-b { background-color: #1abc9c; }
+#feature-c { background-color: #34495e; }
+.banner-section h2, .banner-section h5, .banner-section ul, .banner-section li, .banner-section p { color: white; }
+.banner-section h2 { font-family: 'Crete Round'; }
+a.anchor { display: block; position: relative; top: -80px; visibility: hidden; }
+.banner-section ul { list-style: disc; }
+.banner-section i { 
+	font-size: 80px;
+	color: white;
+	padding: 20px 0;
+	width: 100%;
+	text-align: left;
+}
+@include respond(all-phones) {
+	.banner-section h2, .banner-section i { text-align: center; margin: 0; }
+	.banner-section i { padding: 30px 0; }
+	a.anchor { top: -20px; }
+}
+@include respond(desktop) {
+	#about { margin-top: 60px; }
+}
+.dropcase { float: left; color: #fff; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Crete Round'; }
+.btn { margin-bottom: 5px; }
+footer { background-color: #4a4d50; border-top: 10px solid #f9fafa; padding: 15px 0; }
+footer p { color: #f1c40f; text-align: center; }
